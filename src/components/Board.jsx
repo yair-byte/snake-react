@@ -1,7 +1,7 @@
 import React, { useState , useEffect , useRef } from 'react';
 import '../steelsheets/Board.css';
 
-const BOARD_SIZE = 45;
+const BOARD_SIZE = 30;
 const TYPE = {typeEmpty: 0, typeSnake: 1, typeFood: 2, typeSnakeHead: 3};
 const DIRECTION = {UP: 0, DOWN: 1, RIGHT: 2, LEFT: 3};
 const KEYS = {KEY_UP: 38, KEY_DOWN: 40, KEY_RIGHT: 39,KEY_LEFT: 37};
@@ -16,11 +16,11 @@ function Board({ propGameOver , propSnakeSpeed, propScore }){
 
   const createFirstBoard = () => {
     const firstBoard = new Array(BOARD_SIZE).fill(0).map(() => new Array(BOARD_SIZE).fill(TYPE.typeEmpty));
-    snake = [{row: Math.floor(Math.random() * (BOARD_SIZE-2)) , column: Math.floor(Math.random() * (BOARD_SIZE-2))}];
+    snake = [{row: Math.floor(Math.random() * (BOARD_SIZE-10)) , column: Math.floor(Math.random() * (BOARD_SIZE-10))}];
     food = {row: Math.floor(Math.random() * BOARD_SIZE) , column: Math.floor(Math.random() * BOARD_SIZE)};
-    newDirection = DIRECTION.LEFT;
+    newDirection = Math.floor(Math.random() * Object.keys(DIRECTION).length);
     snakeDirection = newDirection;
-    TICK_INTERVAL = parseInt(500/propSnakeSpeed);
+    TICK_INTERVAL = parseInt(300/propSnakeSpeed);
     snake.map((snakePixel) => {
       firstBoard[snakePixel.row][snakePixel.column] = TYPE.typeSnakeHead;
     })
