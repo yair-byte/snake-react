@@ -59,7 +59,7 @@ function Board({ propGameOver , propSnakeSpeed, propScore }){
         let id = setInterval(tick, delay);
         return () => clearInterval(id);
       }
-    }, [delay]);
+    }, [delay],[savedCallback]);
   };
 
   const handleKeyDown = (event) => {
@@ -77,7 +77,6 @@ function Board({ propGameOver , propSnakeSpeed, propScore }){
         newDirection = DIRECTION.RIGHT;
         break;
       default:
-        newDirection = snakeDirection;
         break;
     }
   };
@@ -166,6 +165,7 @@ function Board({ propGameOver , propSnakeSpeed, propScore }){
       let randomNumRow = 0;
       let randomNumColumn = 0;
       do {
+        flag = 0;
         randomNumRow = Math.floor(Math.random() * BOARD_SIZE); 
         randomNumColumn = Math.floor(Math.random() * BOARD_SIZE); 
         for (let i=0; i<snake.length; i++) {
