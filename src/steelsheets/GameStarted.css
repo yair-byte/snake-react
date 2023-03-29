@@ -1,0 +1,46 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+}
+
+.welcome-container h1 {
+    color: greenyellow;
+}
+  
+.speed-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+  
+.speed-options label {
+    margin: 0 10px;
+}
+  
+.speed-options input[type='radio'] {
+    margin-right: 5px;
+}
+  
+.welcome-container button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #f05454;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 10px;
+}
+  
+.welcome-container button:hover {
+    transform: scale(1.1);
+    background-color: #e44c4c;
+}

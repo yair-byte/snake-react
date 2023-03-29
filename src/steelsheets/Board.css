@@ -1,0 +1,30 @@
+.board {
+    outline-color: white;
+    outline-style: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.row {
+    height: 10px;
+}
+
+.cell {
+    height: 10px;
+    width: 10px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: rgba(248, 248, 255, 0.05);
+    display: inline-block;
+}
+
+.snake-cell {
+    background-color: green;
+}
+
+.food-cell {
+    background-color: red;
+}
+
+.snake-head-cell {
+    background-color: greenyellow;
+}

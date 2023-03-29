@@ -1,0 +1,16 @@
+.score {
+    font-size: 1.3rem;
+    font-family: Roboto, sans-serif;
+}
+
+#fijo {
+    color: gold;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+#variable {
+    color: goldenrod;
+    text-align: center;
+    margin: 10px 10px;
+}
