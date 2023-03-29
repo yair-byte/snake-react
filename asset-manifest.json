@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/snake-react/static/css/main.19410d5c.css",
-    "main.js": "/snake-react/static/js/main.be532989.js",
+    "main.js": "/snake-react/static/js/main.44d416be.js",
     "static/media/snakee.png": "/snake-react/static/media/snakee.5b7dc185d775a6eb6901.png",
     "index.html": "/snake-react/index.html",
     "main.19410d5c.css.map": "/snake-react/static/css/main.19410d5c.css.map",
-    "main.be532989.js.map": "/snake-react/static/js/main.be532989.js.map"
+    "main.44d416be.js.map": "/snake-react/static/js/main.44d416be.js.map"
   },
   "entrypoints": [
     "static/css/main.19410d5c.css",
-    "static/js/main.be532989.js"
+    "static/js/main.44d416be.js"
   ]
 }
